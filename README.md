@@ -1,5 +1,4 @@
-- 👋 Hi, I’m @Teju0427
-- 👀 I’m interested in c lang / AI
+- 👋 Hi, I’m tejaswini
 - 📫 How to reach me tejumk0297@gmail.com
 
 
