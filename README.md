@@ -1,6 +1,5 @@
 - 👋 Hi, I’m @Teju0427
 - 👀 I’m interested in c lang / AI
-- 🌱 I’m currently learning java , python 
 - 📫 How to reach me tejumk0297@gmail.com
 
 
