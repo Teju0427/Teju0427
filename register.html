@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create Your Apple ID - Apple</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Inter',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+
+body{
+background:#fbfbfd;
+color:#1d1d1f;
+display:flex;
+flex-direction:column;
+min-height:100vh;
+}
+
+nav{
+background:rgba(0,0,0,0.8);
+backdrop-filter:saturate(180%) blur(20px);
+height:48px;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+nav svg{
+fill:#f5f5f7;
+width:16px;
+height:44px;
+}
+
+.main-container{
+flex-grow:1;
+display:flex;
+justify-content:center;
+padding:40px 20px;
+}
+
+.register-box{
+width:100%;
+max-width:520px;
+}
+
+.header-text{
+text-align:center;
+margin-bottom:40px;
+}
+
+.header-text h1{
+font-size:40px;
+font-weight:600;
+margin-bottom:12px;
+}
+
+.header-text p{
+font-size:17px;
+}
+
+.form-section{
+margin-bottom:24px;
+}
+
+.form-row{
+display:flex;
+gap:16px;
+}
+
+.form-row .input-group{
+flex:1;
+}
+
+.input-group{
+position:relative;
+margin-bottom:16px;
+}
+
+.input-group input,
+.input-group select{
+
+width:100%;
+height:56px;
+padding:20px 16px 6px;
+font-size:17px;
+border:1px solid #d2d2d7;
+border-radius:8px;
+background:#fff;
+outline:none;
+}
+
+.input-group input:focus,
+.input-group select:focus{
+border-color:#0071e3;
+box-shadow:0 0 0 1px #0071e3;
+}
+
+.input-group label{
+position:absolute;
+left:16px;
+top:18px;
+color:#86868b;
+transition:0.2s;
+}
+
+.input-group input:focus~label,
+.input-group input:not(:placeholder-shown)~label,
+.input-group select:focus~label,
+.input-group select:valid~label{
+
+top:8px;
+font-size:12px;
+
+}
+
+.hint{
+font-size:12px;
+color:#86868b;
+margin-top:-10px;
+margin-bottom:16px;
+padding-left:16px;
+}
+
+.divider{
+border-top:1px solid #d2d2d7;
+margin:32px 0;
+}
+
+.btn-primary{
+width:100%;
+background:#0071e3;
+color:white;
+font-size:17px;
+padding:18px;
+border:none;
+border-radius:12px;
+cursor:pointer;
+}
+
+.footer-links{
+text-align:center;
+margin-top:32px;
+font-size:14px;
+}
+
+.footer-links a{
+color:#0071e3;
+text-decoration:none;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<svg viewBox="0 0 14 44">
+<path d="M13.0729 17.68C13.064 15.655 14.6295 14.73 14.7001 14.685C13.7842 13.345 12.3924 13.13 11.9023 13.09C10.7483 12.97 9.57656 13.775 8.98357 13.775C8.3813 13.775 7.42436 13.12 6.47161 13.13C5.2323 13.145 4.0772 13.845 3.44747 14.945C2.15802 17.18 3.11663 20.485 4.37517 22.3C5.0003 23.2 5.72758 24.215 6.69614 24.185C7.625 24.155 7.97931 23.595 9.07008 23.595C10.1517 23.595 10.4789 24.185 11.4363 24.17C12.433 24.155 13.0645 23.245 13.6797 22.335C14.3948 21.295 14.685 20.275 14.7001 20.215C14.6806 20.205 13.0822 19.59 13.0729 17.68Z"/>
+</svg>
+</nav>
+
+<main class="main-container">
+
+<div class="register-box">
+
+<div class="header-text">
+<h1>Create Your Apple ID</h1>
+<p>One Apple ID is all you need to access all Apple services.</p>
+</div>
+
+<form id="create-account-form">
+
+<div class="form-section">
+
+<div class="form-row">
+
+<div class="input-group">
+<input type="text" id="first_name" placeholder=" " required>
+<label>First name</label>
+</div>
+
+<div class="input-group">
+<input type="text" id="last_name" placeholder=" " required>
+<label>Last name</label>
+</div>
+
+</div>
+
+<div class="input-group">
+<select id="country" required>
+<option value="" disabled selected hidden></option>
+<option value="US">United States</option>
+<option value="UK">United Kingdom</option>
+<option value="CA">Canada</option>
+<option value="IN">India</option>
+<option value="AU">Australia</option>
+</select>
+<label>COUNTRY / REGION</label>
+</div>
+
+<div class="input-group">
+<input type="date" id="dob" required>
+<label>Date of birth</label>
+</div>
+
+</div>
+
+<div class="divider"></div>
+
+<div class="form-section">
+
+<div class="input-group">
+<input type="text" id="apple_id" placeholder=" " required>
+<label>Apple ID</label>
+</div>
+
+<p class="hint">This will be your Apple ID.</p>
+
+<div class="input-group">
+<input type="password" id="password" placeholder=" " required>
+<label>Password</label>
+</div>
+
+<div class="input-group">
+<input type="password" id="confirm_password" placeholder=" " required>
+<label>Confirm password</label>
+</div>
+
+</div>
+
+<div class="divider"></div>
+
+<div class="form-section">
+
+<div class="input-group">
+<input type="tel" id="phone" placeholder=" " required>
+<label>Phone number</label>
+</div>
+
+<p class="hint">Enter a phone number you can always access.</p>
+
+</div>
+
+<button type="submit" class="btn-primary">Continue</button>
+
+</form>
+
+<div class="footer-links">
+Already have an Apple ID? <a href="login.html">Sign in.</a>
+</div>
+
+</div>
+</main>
+
+<script>
+
+document.getElementById("create-account-form").addEventListener("submit", async (e)=>{
+
+e.preventDefault()
+
+const userData={
+
+first_name:document.getElementById("first_name").value,
+last_name:document.getElementById("last_name").value,
+country:document.getElementById("country").value,
+dob:document.getElementById("dob").value,
+apple_id:document.getElementById("apple_id").value,
+password:document.getElementById("password").value,
+phone:document.getElementById("phone").value
+
+}
+
+try{
+
+const response=await fetch("http://127.0.0.1:5000/api/register-user",{
+
+method:"POST",
+headers:{"Content-Type":"application/json"},
+body:JSON.stringify(userData)
+
+})
+
+const data=await response.json()
+
+if(data.status===1){
+
+alert("Apple ID Created Successfully")
+window.location.href="login.html"
+
+}else{
+
+alert(data.message)
+
+}
+
+}catch(err){
+
+alert("Server error")
+
+}
+
+})
+
+</script>
+
+</body>
+</html>
