@@ -1,4 +1,4 @@
-<h1 align="center">Hi 👋, I'm Tejaswini</h1>
+<h1 align="center">Hi 👋, I'm M K Tejaswini</h1>
 
 <h3 align="center">Computer Science Student | Full-Stack Development Learner | Building Real-World Projects</h3>
 
